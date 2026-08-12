@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>R1Qu3ur 本人確認システム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <main class="window" id="window">
+    <header class="titlebar">
+      <span>R1Qu3ur 本人確認システム Ver.1998</span>
+      <button class="close" type="button" aria-label="閉じる">×</button>
+    </header>
+
+    <section class="screen" aria-live="polite">
+      <div class="status"><span class="blink">●</span> SECURE BIRTHDAY GATEWAY</div>
+      <h1 id="question">あなたはR1Qu3urですか？</h1>
+      <p id="subtext">祝福対象者の本人確認を行います。</p>
+
+      <div class="buttons" id="buttons">
+        <button class="yes" id="yes" type="button">はい</button>
+        <button class="no" id="no" type="button">いいえ</button>
+      </div>
+
+      <div class="progress-wrap" id="progressWrap" hidden>
+        <div class="progress-label" id="progressLabel">祝福データを読み込んでいます…</div>
+        <div class="progress"><span id="progressBar"></span></div>
+      </div>
+
+      <p class="message" id="message">※「いいえ」を選択する場合は正確にクリックしてください。</p>
+    </section>
+
+    <footer>
+      <span>接続先：INTERNET</span>
+      <span>推奨環境：Internet Explorer 5.5 / 800×600</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
