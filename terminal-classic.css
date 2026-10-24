@@ -1,0 +1,23 @@
+/* Terminal content flows like a Tera Term session, including empty prompts. */
+:root{color-scheme:dark;font-family:"MS Gothic",Consolas,monospace;color:#ddd;background:#3a6ea5}*{box-sizing:border-box}body{margin:0;min-height:100svh}.shell{margin:auto;background:#000}header{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #777}.menubar{color:#111;font-family:"MS PGothic",sans-serif;line-height:1.6}.terminal-viewport{scrollbar-gutter:stable}.line{overflow-wrap:anywhere}.reward a{text-underline-offset:3px}form{display:flex}input{flex:1;width:90px;background:#000;border:0;border-radius:0;outline:none}button{border:2px outset #eee;border-radius:0;background:#d4d0c8;color:#111;font:12px "MS PGothic",sans-serif;cursor:pointer}button:active{border-style:inset}button:focus-visible,a:focus-visible{outline:2px solid #5ff;outline-offset:3px}nav,footer{display:flex;flex-wrap:wrap;gap:10px}footer{justify-content:space-between;background:#d4d0c8;color:#222;font:11px/1.7 "MS PGothic",sans-serif}footer a{color:#000080}
+body{background:#3a6ea5;padding:28px 18px}
+.shell{max-width:1060px;border:3px outset #eee;box-shadow:4px 5px #18354e}
+header{background:linear-gradient(90deg,#0a246a,#3a6ea5);color:#fff;font-family:"MS PGothic",sans-serif;padding:5px 8px;font-size:13px;min-height:28px}
+header .badge{color:#fff;font-size:11px}
+.menubar{background:#d4d0c8;padding:4px 8px;font-size:12px;border-bottom:1px solid #808080}
+.terminal-viewport{height:clamp(360px,69svh,740px);overflow:auto;background:#000;padding:8px 6px;cursor:text;scrollbar-color:#d4d0c8 #444}
+.output{height:auto;overflow:visible;padding:0;margin:0}
+.line{font-family:"MS Gothic","ＭＳ ゴシック",Consolas,monospace;font-size:15px;line-height:1.45;margin:0;white-space:pre-wrap;color:#ddd}
+.command-line{color:#ddd}
+.error{color:#ddd}
+form{gap:7px;flex-wrap:nowrap;align-items:baseline;padding:0;margin:0;min-height:22px}
+form label,input{font-family:"MS Gothic","ＭＳ ゴシック",Consolas,monospace;font-size:15px;line-height:1.45;color:#ddd}
+form label{width:auto;white-space:nowrap}
+input{min-width:25px;padding:0;box-shadow:none!important;caret-color:#ddd}
+.run{display:none}
+.reward{margin:9px 0;padding:7px;border:0}
+.reward a{margin:0;color:#8cf}
+nav{padding:5px 8px;background:#d4d0c8;gap:5px}
+nav button{padding:3px 9px}
+footer{border-top:1px solid #888;padding:4px 8px}
+@media(max-width:650px){body{padding:6px 3px}.menubar{font-size:10px}.terminal-viewport{height:65svh}.line,form label,input{font-size:12px}.run{display:block;padding:2px 5px}form{flex-wrap:wrap}form label{width:100%}}
